@@ -55,8 +55,34 @@
         <!-- /.header-wrapper -->
       </header>
       <!-- Секция с расписанием -->
-      <section class="hero"></section>
-      <!-- Подвал сайта -->
+      <section class="hero">
+        <div class="hero-wrapper">
+          <div class="hero-caption">
+            <span class="hero-caption__text">Расписание</span>
+          </div>
+          <div class="hero-block monday"></div>
+          <!-- /.monday -->
+          <div class="hero-block tuesday"></div>
+          <!-- /.tuesday -->
+          <div class="hero-block wednesday"></div>
+          <!-- /.wednesday -->
+        </div>
+        <!-- /.hero-wrapper -->
+      </section>
+
+      <!-- Форма -->
+      <form action="select1.php" method="post">
+        <p>
+          <select size="3" multiple name="hero[]">
+            <option disabled>Выберите героя</option>
+            <option value="Чебурашка">Чебурашка</option>
+            <option selected value="Крокодил Гена">Крокодил Гена</option>
+            <option value="Шапокляк">Шапокляк</option>
+            <option value="Крыса Лариса">Крыса Лариса</option>
+          </select>
+        </p>
+        <p><input type="submit" value="Отправить" /></p>
+      </form>
     </div>
     <!-- /.container -->
     <footer class="footer"></footer>
